@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(112, 131, 125);
+}
+
+header {
+    background: #2e8b57;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(166, 223, 183, 0.664);
+    color: azure;
+    border: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 40px;
+    text-align: center;
+
+}
