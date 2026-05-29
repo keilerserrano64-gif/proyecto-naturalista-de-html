@@ -1,21 +1,154 @@
-body {
-    background-color: rgb(112, 131, 125);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    background-color: #f4f7f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+
 header {
-    background: #2e8b57;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../img/iconos/WhatsApp\ Image\ 2026-05-28\ at\ 4.12.30\ PM.jpeg') no-repeat center center/cover;
+    color: #fff;
+    padding-bottom: 60px;
 }
 
 nav {
-    background-color: rgba(166, 223, 183, 0.664);
-    color: azure;
-    border: 20px;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 40px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
 
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+nav .hola {
+    display: flex;
+    gap: 20px;
+}
+
+nav .hola a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav .hola a:hover {
+    color: #a3e635;
+}
+
+
+.hero {
+    text-align: center;
+    max-width: 800px;
+    margin: 80px auto 20px auto;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+section {
+    padding: 60px 5%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card .titulo {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2,
+.card h3 {
+    font-size: 1.4rem;
+    color: #2c4a3e;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+
+.card .titulo nav {
+    background-color: #f0f7f4;
+    color: #3e7d60;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-left: 4px solid #4ade80;
+}
+
+
+footer {
+    background-color: #1e332a;
+    color: #bcdecb;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
 }
