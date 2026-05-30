@@ -1,154 +1,142 @@
-* {
+
+* {  
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 
 body {
-    background-color: #f4f7f5;
+    background-color: #f0f2f1;
     color: #333;
-    line-height: 1.6;
+    padding: 20px;
 }
 
 
-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('../img/iconos/WhatsApp\ Image\ 2026-05-28\ at\ 4.12.30\ PM.jpeg') no-repeat center center/cover;
-    color: #fff;
-    padding-bottom: 60px;
-}
-
-nav {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
+    border: 2px solid #4a5c50; 
+    border-radius: 15px;         
+    padding: 15px 30px;
+    background-color: #ffffff;
+    margin-bottom: 30px;
 }
 
-nav .logo {
-    font-size: 1.5rem;
+.logo {
     font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #fff;
+    font-size: 32px;
+    color: #2e3d34;
+    font-style: italic;
 }
 
-nav .hola {
-    display: flex;
-    gap: 20px;
+.menu-links a {
+    border: 2px solid #2e3d34;      
+    border-radius: 8px;           
+    padding: 8px 16px;             
+    text-decoration: none;   
+    color: #2e3d34;
+    font-weight: 600;
+    margin-left: 10px;
+    transition: all 0.3s ease;
 }
 
-nav .hola a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-nav .hola a:hover {
-    color: #a3e635;
+.menu-links a:hover {
+    background-color: #2e3d34;
+    color: #ffffff;
 }
 
 
 .hero {
     text-align: center;
-    max-width: 800px;
-    margin: 80px auto 20px auto;
-    padding: 0 20px;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    background-color: #e2e8e4;
+    border-radius: 12px;
 }
 
 .hero h1 {
-    font-size: 2.8rem;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    font-size: 36px;
+    color: #1e2922;
+    margin-bottom: 15px;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    font-weight: 300;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-
-section {
-    padding: 60px 5%;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
+    font-size: 18px;
+    max-width: 800px;
     margin: 0 auto;
+    line-height: 1.6;
+    color: #555;
 }
+
+
+.TODOS {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+}
+
 
 .card {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 25px;
+    width: 320px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 5px 10px 300px rgb(0, 0, 0);
 }
 
 .card img {
     width: 100%;
-    height: 220px;
-    object-fit: cover;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-.card .titulo {
-    padding: 25px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.card h2,
-.card h3 {
-    font-size: 1.4rem;
-    color: #2c4a3e;
+.card h2, .card h3 {
+    font-size: 20px;
+    color: #2e3d34;
     margin-bottom: 15px;
 }
 
 .card p {
+    font-size: 15px;
+    line-height: 1.5;
     color: #666;
-    font-size: 0.95rem;
 }
 
 
-.card .titulo nav {
-    background-color: #f0f7f4;
-    color: #3e7d60;
-    padding: 8px 12px;
+.card-list {
+    text-align: left;
+    list-style-position: inside;
+    color: #555;
+    font-size: 14px;
+}
+
+.card-list li {
     margin-bottom: 8px;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    border-left: 4px solid #4ade80;
 }
 
 
 footer {
-    background-color: #1e332a;
-    color: #bcdecb;
     text-align: center;
-    padding: 30px 20px;
-    margin-top: 40px;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
+    padding: 30px;
+    margin-top: 50px;
+    border-top: 1px solid #ccc;
+    color: #777;
+    font-size: 14px;
 }
