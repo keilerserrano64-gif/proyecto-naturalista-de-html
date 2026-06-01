@@ -1,0 +1,33 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #4a5c50; 
+    border-radius: 15px;         
+    padding: 15px 30px;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 32px;
+    color: #2e3d34;
+    font-style: italic;
+}
+
+.menu-links a {
+    border: 2px solid #2e3d34;      
+    border-radius: 8px;           
+    padding: 8px 16px;             
+    text-decoration: none;   
+    color: #2e3d34;
+    font-weight: 600;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.menu-links a:hover {
+    background-color: #2e3d34;
+    color: #ffffff;
+}
