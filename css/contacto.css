@@ -1,206 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
 
-        /* Estilos Globales y Variables */
-        :root {
-            --verde-principal: #2e6f40;
-            --verde-claro: #e8f5e9;
-            --marron-oscuro: #3e2723;
-            --gris-fondo: #f9f9f9;
-            --blanco: #ffffff;
-            --texto: #333333;
-        }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #4a5c50;
+    border-radius: 15px;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+}
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--gris-fondo);
-            color: var(--texto);
-            line-height: 1.6;
-        }
+.logo {
+    font-weight: bold;
+    font-size: 32px;
+    color: #2e3d34;
+    font-style: italic;
+}
 
-        header {
-            background-color: var(--verde-principal);
-            color: var(--blanco);
-            text-align: center;
-            padding: 3rem 1rem;
-        }
+.menu-links a {
+    border: 2px solid #2e3d34;
+    border-radius: 8px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #2e3d34;
+    font-weight: 600;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
+.menu-links a:hover {
+    background-color: #2e3d34;
+    color: #ffffff;
+}
 
-        header p {
-            margin: 0.5rem 0 0 0;
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
+h1 {
+    color: green;
+}
 
-        /* Contenedor Principal */
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-        }
+input,
+textarea {
+    margin-top: 5px;
+}
 
-        /* Buscador */
-        .search-box {
-            max-width: 600px;
-            margin: -2rem auto 2rem auto;
-            background: var(--blanco);
-            padding: 0.5rem;
-            border-radius: 50px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            display: flex;
-        }
-
-        .search-box input {
-            flex: 1;
-            border: none;
-            padding: 0.8rem 1.5rem;
-            font-size: 1rem;
-            border-radius: 50px;
-            outline: none;
-        }
-
-        .search-box button {
-            background-color: var(--verde-principal);
-            color: var(--blanco);
-            border: none;
-            padding: 0.8rem 2rem;
-            border-radius: 50px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-
-        .search-box button:hover {
-            background-color: var(--marron-oscuro);
-        }
-
-        /* Secciones */
-        h2 {
-            text-align: center;
-            color: var(--marron-oscuro);
-            margin-bottom: 2rem;
-        }
-
-        /* Tarjetas de Categorías */
-        .categories-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 4rem;
-        }
-
-        .card {
-            background: var(--blanco);
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            text-align: center;
-            border-top: 5px solid var(--verde-principal);
-            transition: transform 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .card h3 {
-            margin: 0 0 0.5rem 0;
-            color: var(--verde-principal);
-        }
-
-        .card p {
-            font-size: 0.95rem;
-            color: #666;
-        }
-
-        .card a {
-            display: inline-block;
-            margin-top: 1rem;
-            color: var(--marron-oscuro);
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .card a:hover {
-            text-decoration: underline;
-        }
-
-        /* Sección de Contacto doble columna */
-        .support-flex {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            background: var(--blanco);
-            padding: 2.5rem;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-
-        .contact-info, .contact-form {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        .contact-info h3 {
-            color: var(--verde-principal);
-            margin-top: 0;
-        }
-
-        /* Formulario */
-        .form-group {
-            margin-bottom: 1.2rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.4rem;
-            font-weight: 500;
-        }
-
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            box-sizing: border-box;
-            font-family: inherit;
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            height: 120px;
-        }
-
-        button.btn-submit {
-            background-color: var(--verde-principal);
-            color: var(--blanco);
-            border: none;
-            padding: 0.8rem 2rem;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 1rem;
-            width: 100%;
-            font-weight: bold;
-        }
-
-        button.btn-submit:hover {
-            background-color: var(--marron-oscuro);
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background-color: var(--marron-oscuro);
-            color: var(--blanco);
-            margin-top: 4rem;
-            font-size: 0.9rem;
-        }
+button {
+    margin-top: 10px;
+}
