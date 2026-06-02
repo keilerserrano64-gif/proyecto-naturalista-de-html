@@ -1,3 +1,6 @@
+body{
+    background-color: rgba(128, 187, 123, 0.13);
+}
 .productos-grid {
     display: flex;
     overflow-x: auto;
